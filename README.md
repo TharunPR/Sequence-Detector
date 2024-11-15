@@ -177,7 +177,7 @@ initial begin
     #30 $stop;
 end
 initial begin
-    $monitor("Time=%0t | seq_in=%b | Moore FSM Detected=%b | Mealy FSM Detected=%b",$time, seq_in, moore_detected, mealy_detected);
+$monitor("Time=%0t | seq_in=%b | Moore FSM Detected=%b | Mealy FSM Detected=%b",$time, seq_in, moore_detected, mealy_detected);
 end
 endmodule
 ```
@@ -192,7 +192,6 @@ Time=70000 | seq_in=0 | Moore FSM Detected=0 | Mealy FSM Detected=0
 Time=90000 | seq_in=1 | Moore FSM Detected=0 | Mealy FSM Detected=1
 Time=100000 | seq_in=1 | Moore FSM Detected=1 | Mealy FSM Detected=0
 Time=110000 | seq_in=1 | Moore FSM Detected=0 | Mealy FSM Detected=0
-
 ```
 **Output Waveform** <br>
 <br>
